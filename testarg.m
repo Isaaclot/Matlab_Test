@@ -9,8 +9,8 @@ end
 switch nargin
 case 0
 disp('使用该函数至少需要一个输入参数!');
-c = [];
-return
-case 1 c = a.^2;
-case 2 c = a+b;
+    c = [];
+    return
+        case 1  c = a.^2;
+        case 2  c = a+b;
 end
