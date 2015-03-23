@@ -1,0 +1,16 @@
+student=struct('name',[],'age',[],'score',randint(3,10,[0,100]))
+student1=struct('name',[],'age',[],'score',randint(3,10,[0,100]))
+student2=struct('name',[],'age',[],'score',randint(3,10,[0,100]))
+student1.score
+avg1=student1.score(1,:)+student1.score(2,:)+student1.score(3,:)
+avg1./3
+avg=student.score(1,:)+student.score(2,:)+student.score(3,:)
+avg2=student2.score(1,:)+student2.score(2,:)+student2.score(3,:)
+a=[avg./3;avg1;avg2./3]
+C(1,1)={student.name+student1.name+student2.name}
+student.name='a'
+student1.name='b'
+student2.name='c'
+m=[student.name,student1.name,student2.name]
+m=[student.name;student1.name;student2.name]
+C(1,1)={m}
